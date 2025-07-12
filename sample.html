@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-1 - Copy.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/cb7f83baaf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1></h1>
+    <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+    <div class="parallax">
+        <div class="container">
+            <nav>
+                <img src="/images/SHUTTLE_LOGO_SMALL-removebg-preview (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+            </nav>
+            <div class="header-text">
+                <h1>Welcome to the <span>Shuttle</span> <br> Website </h1>
+                <p>Your one-stop solution for all shuttle-related services.</p>
+                <a class="btn" href='#services'>Explore</a> 
+            </div>
+        </div>
+    
+            <div id="about">
+                <h1 class="titles">About Us</h1>
+                <p>
+                    <br>     At S&S Shuttle Services we turn every kilometre into a comfortable, stress-free experience. <br>
+                        Based in Berlin, our multilingual team and modern, well-maintained fleet are on the road 24 <br>
+                        hours a day, 7 days a week, ensuring you reach your destination safely and on time. <br>                         
+                        We combine Berlin know-how with nationwide reach: book us for a quick airport run <br>
+                        across town or a full-day transfer to any city in Germany. Your itinerary, luggage needs and <br>
+                        personal preferences are our blueprint—our chauffeurs handle the rest with professionalism <br>
+                        and genuine hospitality <br>
+                </p>
+                <a href="#contact" class="btn-1">Contact Us <i class="fa-solid fa-arrow"></i></a>
+                
+            </div>
+
+         <div id="services">
+            <div class="container">
+            <h1 class="titles">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-taxi"></i>
+                    <h2>City-to-City Shuttles</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad itaque laboriosam unde, dolorum repudiandae officia repellendus natus optio totam iure sit neque illum qui rerum numquam facere fugit nesciunt soluta!</p>
+                    <a href="#">More Info</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Student Welcome Rides</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad itaque laboriosam unde, dolorum repudiandae officia repellendus natus optio totam iure sit neque illum qui rerum numquam facere fugit nesciunt soluta!</p>
+                    <a href="#">More Info</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-plane-arrival"></i>
+                    <h2>Airport Transfers</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad itaque laboriosam unde, dolorum repudiandae officia repellendus natus optio totam iure sit neque illum qui rerum numquam facere fugit nesciunt soluta!</p>
+                    <a href="#">More Info</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Small Parcel Express </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad itaque laboriosam unde, dolorum repudiandae officia repellendus natus optio totam iure sit neque illum qui rerum numquam facere fugit nesciunt soluta!</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="contact">
+        <h1 class="titles">Contact Us</h1>
+        <p>If you have any questions or inquiries, feel free to reach out to us! </p>
+    </div>
+        <div id="contact">
+            <div class="container">
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" name="Name" class="field" placeholder="Your Name" required>
+                            <input type="text" name="Email" class="field" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn submit">Submit</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>SHUTTLE 22</h3>
+            <p>S&S Shuttle Services <br>
+                Rhinstr. 48 <br>
+                12681 Berlin <br>
+                Germany 
+            </p>
+            <p id="contact-info"><strong>Phone / WhatsApp:</strong> <strong>+49 176 2314 4808</strong>
+                <pre>                                  +49 176 4131 3729 </pre>
+                <strong>Email:</strong> <a id="email" href="mailto: info@ss-shuttle.de"> info@ss-shuttle.de </a>
+                <button id="copy-email" title="Copy email">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Company info</h4>
+            <p>
+                • Head office: Rhinstr. 48, 12681 Berlin <br>
+                • Managing director: Pankaj Sihag <br>
+                • Tax ID / licensing: Available on request
+            </p>
+        </div>
+    </div>
+
+        <div class="copyright">
+            <p>© Copyright <strong>SHUTTLE 22 <span id="yr"></span></strong>. All Rights Reserved</p>
+        </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const animatedElements = document.querySelectorAll('.titles, .services-list > div, .header-text, .contact-form, .footer-column');
+
+    function animateOnScroll() {
+        animatedElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add('in-view');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll();
+});
+</script>
+<style>
+.titles,
+.services-list > div,
+.header-text,
+.contact-form,
+.footer-column {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.titles.in-view,
+.services-list > div.in-view,
+.header-text.in-view,
+.contact-form.in-view,
+.footer-column.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+<!-- 3D Car Animation Section -->
+ <model-viewer class="absolute left-0 top-0 w-full h-full z-30 pointer-events-none"
+                src="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/scene.gltf?v=1674149863924"
+                exposure="1"
+                shadow-intensity="3"
+                camera-orbit="0deg 10deg 20%"
+                camera-target="-9.5m -8m 5m">
+              </model-viewer>
+</body>
+</html>
